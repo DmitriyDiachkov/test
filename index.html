@@ -5,9 +5,117 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <!-- fullPage css -->
+    <link rel="stylesheet" href="vendor/fullPage/jquery.fullpage.css">
+    <!-- main css -->
+    <link rel="stylesheet/less" href="main.less">
+    <!--font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+          integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
+<div id="fullpage">
+    <section class="section intro">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="intro-content">
+            <h3>WELCOME TO GLINT</h3>
+            <h1>We are a creative group of people who design influential brands and digital experiences.</h1>
+            <div class="intro-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+            <div class="intro-btn">
+                <button><a href="#">start a project</a></button>
+                <button><a href="#">more about us</a></button>
+            </div>
+        </div>
+    </section>
 
+    <section class="section about">
+        <div class="about-top">
+            <h3>hello there</h3>
+            <h1>We Are Glint</h1>
+            <hr>
+        </div>
+        <div class="about-middle">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt.</p>
+        </div>
+        <div class="about-bottom">
+            <div class="about-row">
+                <div class="about-rows">
+                    <h1>127</h1>
+                    <h4>Awards
+                        <Received></Received>
+                    </h4>
+                </div>
+                <div class="about-rows">
+                    <h1>1505</h1>
+                    <h4>Cups of Coffee</h4>
+                </div>
+                <div class="about-rows">
+                    <h1>109</h1>
+                    <h4>Projects Completed</h4>
+                </div>
+                <div class="about-rows">
+                    <h1>102</h1>
+                    <h4>Happy Clients</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section skills">
+        <aside>
+            <h4>WHAT WE DO</h4>
+            <h1>We’ve got everything you need to launch and grow your business</h1>
+            <div class="skills-block">
+                <div class="skill-item"></div>
+                <div class="skill-item"></div>
+                <div class="skill-item"></div>
+                <div class="skill-item"></div>
+            </div>
+        </aside>
+    </section>
+
+    <section class="section">Some section</section>
+</div>
+
+<!--less-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.4/less.js"></script>
+<!-- jQuery -->
+<script src="vendor/jQuery/jquery-3.3.1.min.js"></script>
+<!-- fullPage -->
+<script src="vendor/fullPage/jquery.fullpage.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            navigation: true
+        });
+    });
+</script>
 </body>
 </html>

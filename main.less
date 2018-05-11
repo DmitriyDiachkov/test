@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@lato: 'Lato', sans-serif;
+@light-grey: #E0E0E0;
+@light-brown: #A1887F;
+.intro {
+  background: url("images/jack-b-398287-unsplash.jpg") no-repeat fixed center;
+  background-size: cover;
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(2, 2, 3, 0.3);
+    .logo {
+      float: left;
+      width: 100px;
+      margin: 15px 0 10px 10px;
+      img {
+        width: 100%;
+      }
+    }
+
+  }
+  .menu {
+    float: right;
+    display: inline;
+    margin: 10px 0 10px 10px;
+    font: 400 18px @lato;
+    text-transform: lowercase;
+    ul {
+      margin: 10px;
+      padding: 0;
+      list-style-type: none;
+      li {
+        display: inline;
+        padding: 5px;
+        margin: 15px;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+        &:hover {
+          border-bottom: 2px solid @light-brown;
+        }
+        a {
+          text-decoration: none;
+          color: @light-grey;
+        }
+      }
+    }
+  }
+}
+
+.intro-middle {
+  width: 100%;
+  position: absolute;
+  top: 63px;
+  .intro-text {
+    width: 50%;
+    margin-left: 170px;
+    margin-top: 125px;
+    float: left;
+    h1 {
+      color: white;
+      font: 500 67px @lato;
+      margin: 0;
+
+    }
+    h3 {
+      color: grey;
+      font: 600 16px @lato;
+      margin: 0;
+    }
+  }
+}
+
+.intro-bottom {
+  width: 100%;
+  position: absolute;
+  top: 600px;
+  .intro-btn {
+    margin-left: 155px;
+  }
+  button {
+    border: 3px solid white;
+    background-color: transparent;
+    padding: 15px 35px;
+    margin-left: 15px;
+    transition: all ease-in-out 0.4s;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+    }
+    &:hover a {
+      color: black;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font: 600 12px @lato;
+      letter-spacing: 3px;
+      transition: all ease-in-out 0.4s;
+
+    }
+  }
+}
+
+.about {
+  background-color: #1565C0;
+  .about-top {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    h1 {
+      text-align: center;
+      font: 700 100px @lato;
+      margin: 0;
+      padding: 0;
+      color: white;
+
+    }
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font: 600 17px @lato;
+      letter-spacing: 3px;
+      margin: 0;
+      padding: 0;
+    }
+    hr {
+      width:45%;
+      opacity: 0.5;
+      margin-top: 50px;
+    }
+  }
+  .about-middle {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+    p {
+      width: 70%;
+      margin: auto;
+      font: 400 27px @lato;
+      line-height: 1.5;
+    }
+  }
+  .about-bottom {
+    position: absolute;
+    top: 550px;
+    width: 100%;
+  .about-row {
+    width: 80%;
+  }
+  .about-rows {
+    width: 20%;
+    float: left;
+  }
+  }
+}
+
+.skills{
+  aside{
+    height: 80%;
+  }
+  .skills-block{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    .skill-item{
+      width: 45%;
+      height: 150px;
+      border: 1px solid red;
+      margin-bottom: 10px;
+    }
+  }
+}
